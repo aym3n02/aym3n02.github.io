@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL MANNOUY Ayman - Professional Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+        }
+        .profile-section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        .profile-section img {
+            width: 100%;
+            max-width: 700px;
+            margin-right: 20px;
+            /*flex-shrink: 0;  Prevent image from shrinking */
+            margin: 0 auto;
+            display: block; /* Make sure the image is treated as a block element */
+        }
+        .profile-section h2 {
+            color: #0073e6;
+            margin-bottom: 15px;
+        }
+        .profile-section p {
+            line-height: 1.6;
+        }
+        .profile-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .profile-section ul li {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 5px solid #0073e6;
+        }
+        .about-me {
+            display: flex;
+            align-items: center;
+        }
+        .about-me img {
+            max-width: 250px;
+            margin-right: 20px;
+            border-radius: 50%;
+            flex-shrink: 0; /* Prevent image from shrinking */
+        }
+        .about-me .text {
+            flex: 1;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #0073e6;
+            color: white;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EL MANNOUY Ayman</h1>
+        <p>Engineering student | Computer science | Artificial intelligence</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#Projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="profile-section about-me">
+            <img src="photo.jpg" alt="EL MANNOUY">
+            <div class="text">
+                <h2>About Me</h2>
+                <p>
+                    I am a third-year engineering student at IMT Mines Alès, one of the top 15 engineering schools in France. Currently in my final year of study, specializing in computer science and artificial intelligence. Throughout my academic journey, I've gained expertise in designing and developing a variety of AI models, including statistical models, neural networks, and classical algorithmic solutions. My education has also equipped me with essential skills in project management and team leadership, providing me with a solid background to effectively manage and guide projects. Additionally, I've applied these skills to solve real-world problems in several projects, which you can explore on this webpage.
+                </p>
+                <p>
+                    I am currently seeking a 17-week minimum internship opportunity starting from March 4, 2025. This internship would allow me to further apply and expand my expertise in computer science and artificial intelligence, contributing to innovative projects while gaining valuable industry experience.
+                </p>
+            </div>
+        </section>
+
+        <section id="experience" class="profile-section">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>CIRAD</strong> <br>
+                    Montpellier | MAI 2024 – SEPTEMBER 2024 | 4 Months<br>
+                    <p>
+                        This internship involved developing an artificial intelligence model capable of taking a satellite image as input and producing an output image of the same size, with a different color for each surface element, corresponding to the identification of the nature of that surface, known as a land cover map. To achieve this, we used deep learning methods to design an efficient prediction model.
+                    </p>
+
+                    <p>
+                        One of the challenges of this approach is being able to predict class values for an entire satellite image (34,868 columns x 43,732 rows = 1,524,847,376 pixels, encoded as unsigned integers UInt16). Due to the large size of satellite images, a neural network cannot process the entire image as input. We, therefore, had to divide the image into small windows on which predictions could be made. To obtain a prediction for the entire image, we then had to reconstruct the prediction from these small windows. This reconstruction can be done in several different ways, yielding more or less acceptable mosaic results, and we explored various reconstruction methods to determine the best one.
+                    </p>
+                    <img src="application du modèle.png" alt="APPLIED MODEL">
+
+                    <p>
+                        The outcome of this internship was the production of an efficient model, deemed suitable for production by experts. Additionally, a program was developed that uses this model to label an entire satellite image. It is worth noting that this model achieved a high level of precision compared to remote sensing models, with certain types of trees being predicted with remarkable accuracy, in a way never before done in the literature.
+                    </p>
+
+                    <p>
+                        A scientific paper has been submitted for publication on this work, explaining the various challenges we encountered and how we were able to resolve them.
+                    </p>
+                </li>
+                <li>
+                    <strong>TATA Communications</strong> <br>
+                    Aix-en-Provence | MAI 2023 – June 2023| 1 Month <br>
+                    
+                    <p>
+                        During my internship at Oasis Smart SIM, a sub-company of Tata Communications, I worked alongside two colleagues to tackle a challenge within the realm of modern communication tools. With the rapid advancement of these technologies, our task was to develop a web interface that allows users to manage e-SIMs with ease and flexibility.
+                    </p>
+
+                    <p>
+                        e-SIMs, or embedded SIMs, are a digital version of traditional SIM cards that allow users to switch between mobile networks without needing to physically swap out cards. This innovation simplifies the user experience, particularly for frequent travelers or people managing multiple networks.
+                    </p>
+                    <p>
+                        In just one month, we immersed ourselves in understanding the entire process of SIM card and e-SIM production and distribution. By the end of the internship, we successfully delivered a detailed specifications document outlining the design and functionality of the website. The next step was for specialists to review our work and prepare it for development.
+                    </p>
+
+                    <p>
+                        The image below shows a section of the website as we envisioned it.
+                    </p>
+                    <img src="Oasis website.png" alt="Oasis website">
+                    
+
+                </li>
+                <!-- Add more job experiences as needed -->
+            </ul>
+        </section>
+        <section id="Projects" class="profile-section">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Pneumonia detection</strong> <br>
+                    School project<br>
+                    <p>
+                        I developed multiple models aimed at detecting pneumonia from X-ray images, which can be a challenging task for doctors. The blur in X-ray images might be due to the illness or could simply be a natural characteristic of the image, making it hard to distinguish between the two. To tackle this, I compared various machine learning approaches, including the random forest method and a range of deep learning architectures, from a single perceptron to more complex Convolutional Neural Networks (CNNs). Through this work, I achieved a model with 95% accuracy.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>Image Enhancement Techniques for Cancer Detection</strong> <br>
+                    School project<br>
+                    <p>
+                        In cases where lung cancer is present, medical scanners often face difficulty capturing clear images due to the patient's breathing during the scan. The inhaling and exhaling cause the cancerous mass to move, resulting in a blurred image that complicates accurate measurement of its size and position.
+                    </p>
+
+                    <p>
+                        To address this, as a team of 3 engineering students, we developed complex mathematical methods to correct for this motion, allowing the cancer to appear more clearly in the final image. Our approach significantly improved precision, as confirmed by a medical professional, and we published a scientific article detailing this work.
+                    </p>
+                    <img src="foie avant_après.png" alt="R&D Project">
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills" class="profile-section">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Mastery of deep learning libraries</strong> - During my projects and internship, I mastered key Python libraries for deep learning, such as PyTorch and TensorFlow, alongside other essential tools like OpenCV and Pandas. Additionally, I gained expertise in teledetection libraries like GeoPandas, GeoTorch, and Rasterio, which has allowed me to easily work with satellite images. These skills enable me to take on a diverse range of deep learning projects.</li>
+                <li><strong>Organization</strong> - Throughout my experience working on diverse projects across multiple domains, I have consistently prioritized code reproducibility and maintainability. I excel at producing well-organized, thoroughly documented code that ensures seamless handovers and long-term usability, making my contributions valuable for both immediate and future development needs.</li>
+                <li><strong>Multilingual</strong> - I am fluent in three languages: French, Arabic, and English. This linguistic proficiency allows me to communicate effectively with individuals from diverse countries and cultures, fostering connections and enhancing collaboration in a global environment.
+                </li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+
+        <section id="contact" class="profile-section">
+            <h2>Contact</h2>
+            <p>
+                <strong>Email:</strong> </a> ayman.el-mannouy@mines-ales.org <br>
+                <strong>Phone number:</strong> </a>(+33) 06.24.28.06.97 <br>
+                <strong></strong> <a href="https://www.linkedin.com/in/ayman-el-mannouy-3a554821b/" target="_blank">LinkedIn</a> <br>
+                <strong></strong> <a href="https://github.com/aym3n02" target="_blank">github</a> <br>
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 EL MANNOUY. All rights reserved.</p>
+    </footer>
+</body>
+</html>
